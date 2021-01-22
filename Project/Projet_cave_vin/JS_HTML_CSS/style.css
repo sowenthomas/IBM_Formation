@@ -1,0 +1,37 @@
+			#box {
+			border: 1px solid;
+			padding-left: 3px;
+			background-color: #C44C51;
+			width:500px;
+			}
+			
+			#bouton {
+			margin-top: 10px;
+			border-radius: 4px;
+			border-color: #D6D6D6;
+			}
+			
+			p {
+			margin-top: 5px;
+			margin-bottom: 3px;
+			}
+			
+			.first {
+			background-color: #C44C51;
+			}
+			
+			td { 
+			font-family: monospace;
+			padding: 5px;
+			border: 1px solid silver;
+			}
+			
+			table {
+			margin-top: 12px;
+			border-collapse: collapse;
+			}
+			.select1{
+			background-color: #D6D6D6;
+			border-color:#D6D6D6;
+			border-radius: 5px;
+			}

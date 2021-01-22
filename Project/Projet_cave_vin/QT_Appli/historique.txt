@@ -1,0 +1,5 @@
+nom_viticulteur;num_parcelle;type_cepage,poids_raisin;date;heure
+Boudouric;160507122182;Sauvignon;700;23.10.20;12.19.54
+Arjalas;166901120169;Chenin;800;23.10.20;12.20.17
+Berjouan;161201229869;Grenache;700;23.10.20;12.20.45
+Cantu;169911235498;Malbec;50;23.10.20;12.21.12

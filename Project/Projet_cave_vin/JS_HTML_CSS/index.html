@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Html</title>
+		<meta charset="utf-8">
+		<link href="style.css" rel="stylesheet">
+		<script type="text/javascript" src="myscripts.js">
+
+		
+		</script>
+			
+   </head>
+   <body
+    onload="afficher()">
+    <header>
+    <h2>Saisie des parcelles</h2>
+    </header>
+   <body>
+    <section>
+    <form>
+    <div id="box">
+    <p>
+    <label>Parcelle:</label>
+    <input id="parc" name="parc" size="30" placeholder="Parcelle"></input>
+	
+	<label>Cépage:</label>
+	
+    <select for="cepage" id="cepage" name ="cepage" class="select1">
+		<option value="Merlot">Merlot</option>
+		<option value="Pinot_noir">Pinot noir</option>
+		<option value="malbec">Malbec</option>
+		<option value="trousseau">Trousseau</option>
+		<option value="gamay">Gamay</option>
+		<option value="chardonnay">Chardonnay</option>
+		<option value="sauvignon">Sauvignon</option>
+		<option value="grenache">Grenache</option>
+		<option value="savagnin">Savagnin</option>
+		<option value="chenin">Chenin</option>
+	</select>
+	 
+	
+    </p>
+    <p>
+    <input class="select1" type="button" value="Ajouter" onclick="dosetItem()">
+    <input class="select1" type="button" value="Modifier" onclick="dogetItem()">
+	<input class="select1" type="button" value="Supprimer" onclick="doremoveItem()">
+    </p>
+    </div>
+    </form>
+    <table id=paires></table>
+    </section>
+     <!-- <input type="button" id="bouton" value="Nouvelle liste" onclick="doClear()"> -->
+	<input type="button" id="bouton" value="Afficher les parcelles concernant le cépage" onclick="listeCepage()">
+
+	<select id="cepage2" name ="cepage2" class="select1">
+		<option value="Merlot">Merlot</option>
+		<option value="Pinot_noir">Pinot noir</option>
+		<option value="malbec">Malbec</option>
+		<option value="trousseau">Trousseau</option>
+		<option value="gamay">Gamay</option>
+		<option value="chardonnay">Chardonnay</option>
+		<option value="sauvignon">Sauvignon</option>
+		<option value="grenache">Grenache</option>
+		<option value="savagnin">Savagnin</option>
+		<option value="chenin">Chenin</option>
+	</select>
+	
+    <table id=listing></table>
+    </body>
+   </html>
