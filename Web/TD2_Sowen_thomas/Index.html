@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>Html</title>
+	<meta charset="UTF-8">
+	<style>
+	dt{
+	color: red;
+	margin-left: 40px;
+	margin-top: 10px;
+	}
+	
+	dd{
+	margin-top: 10px;
+	}
+
+	.align{
+	margin-left: 10%;	
+	margin-right: 10%;
+	}
+	
+	.consigne{
+	color:blue;
+	}
+	
+	.table1{
+	border: solid;
+	}
+	
+	.png{
+	width: 200px;
+	}
+	
+	.marge{
+	margin-left: 2em;
+	}
+	
+	.form{
+	margin-left:150px;
+	margin-top: -345px;
+	}
+	.form2{
+	margin-bottom:-55px;
+	margin-top: -25px;
+	}
+	.form3{
+	margin-top:58px;
+	}
+	
+	input:required:valid {
+	background-color: #ddffdd;
+	}
+	
+	</style>
+</head>
+<body>
+	<h1 class="consigne">Exo 1: </h1>
+	<ul>
+		<li>Aimer</li>
+		<li>Detester</li>
+		<li>Haïr</li>
+		<li>Adorer</li>
+	</ul>
+	
+	<p>
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum congue velit eget urna suscipit tempus. Proin mollis leo non diam dignissim tincidunt. Cras tempus posuere tellus, quis volutpat orci lobortis et. Etiam posuere condimentum mauris sit amet convallis. Vivamus scelerisque mauris in nulla porta, sed mollis est finibus. Ut sagittis ex arcu, eget tristique dui auctor vitae. Nullam nec dignissim purus. Curabitur dignissim tortor nunc, eget rutrum mauris pharetra nec. Suspendisse feugiat bibendum faucibus. Vestibulum at auctor libero. Praesent ligula urna, feugiat at urna sed, condimentum aliquet odio. Proin lectus nunc, ornare nec diam id, pellentesque venenatis nisl. Curabitur magna ligula, finibus vel pretium ut, ornare sit amet ante. Nunc malesuada nisi et felis molestie, sed dapibus libero ornare. Mauris tempus pretium convallis. Pellentesque nec lorem ullamcorper, dapibus dui non, ultrices libero.
+	</p>
+	
+	<p>
+	Aenean aliquam molestie tellus, in posuere tellus lacinia at. Donec massa orci, molestie eget auctor eget, sagittis quis mauris. Nulla blandit condimentum enim, sit amet porta dolor. Morbi iaculis ante id purus porta, in lacinia ipsum sodales. Vivamus eget tincidunt orci. Ut eu leo porttitor, auctor dui eu, iaculis tortor. Nunc sit amet egestas dolor, sit amet rutrum sapien. Fusce sed nunc turpis. Aliquam vel orci laoreet, elementum diam eget, laoreet nisi. Vestibulum lacinia, justo nec luctus pretium, nibh nisl tristique erat, quis feugiat dolor metus elementum dolor. Nam aliquam volutpat velit, et cursus nulla placerat ac. Morbi faucibus suscipit mollis.
+	</p>
+	<p>Balises de listes disponibles :</p>
+	 
+	 <dl>
+	 <dt><strong>Langage HTML</strong></dt>
+	 <dd>Codification utilisée pour les documents WWW. Ce type de codes a été inventé par TimBerners-Lee alors au CERN.</dd>
+	 <dt><strong>Langage Java</strong></dt>
+	 <dd>Programmation qui fait suer son concepteur tout en lui apportant plusieurs satisfactions…</dd>
+	 </dl>
+	 
+	 <hr class="align">
+	 
+	 <h1 class="consigne">Exo 2: </h1>
+		
+		<table class="table1">
+			<tr class="table1">
+				<th class="table1"colspan="2">       </th>
+				<th class="table1" colspan="2">Premier groupe</th>
+				<th class="table1" colspan="2">Deuxième groupe</th>
+			</tr>
+			
+			<tr class="table1">
+				<th class="table1"> </th>
+				<th class="table1">Personne</th>
+				<th class="table1"> Singulier</th>
+				<th class="table1"> Puriel</th>
+				<th class="table1"> Singulier</th>
+				<th class="table1"> Puriel</th> 
+			</tr>
+			<tr class="table1">
+				<td class="table1" rowspan="3">Présent </td>
+				<td class="table1">1</td>
+				<td class="table1">je mange</td>
+				<td class="table1">nous mangeons</td>
+				<td class="table1">je finis</td>
+				<td class="table1">nous finissons</td> 
+			</tr>
+			<tr class="table1">
+				<td class="table1">2</td>
+				<td class="table1">tu manges</td>
+				<td class="table1">vous mangez</td>
+				<td class="table1">tu finis</td>
+				<td class="table1">vous finissons</td> 
+			</tr>
+			<tr class="table1">
+				<td class="table1">3</td>
+				<td class="table1">il mange</td>
+				<td class="table1">ils mangent</td>
+				<td class="table1">il finit</td>
+				<td class="table1">ils finissent</td> 
+			</tr>
+		</table>
+		<br><br>
+	 <h1 class="consigne">Exo 3: </h1>
+	 
+		<h1>titre du document</h1>
+		<p>le premier paragraphe</p>
+		<p>le deuxième paragraphe</p>
+		<br>
+		<img src='image1.jpg' style="display: block;">
+		<br>
+	 <h1 class="consigne">Exo 4: </h1>
+		<p>Un beau texte avec une<img src='img/dessin.jpg' class="png"> image.</p>
+		
+		<h1>Première partie</h1>
+		On vous demande ici <br>
+			<ul>
+			<li>D'écrire le code xhtml qui correspond à cette page</li>
+			<li>On n'utilisera pas ici de feuille de style</li>
+			</ul>
+		<h1>Seconde partie</h1>
+		Voir exo2
+		<h1>Jouons avec des listes imbriquées</h1>
+		<ol>
+			<li>Ceci est le premier élément numéroté</li>
+			<li>Ceci est le deuxième élément numéroté</li>
+				<ul>
+					<li>Ceci est le premier sous élément du deuxième élément numéroté</li>
+						<ol>
+							<li>Ceci est le deuxième sous-élément du deuxième élément numéroté</li>
+							<li>Ceci est le troisième sous-élément du deuxième élément numéroté</li>
+							<li>Vous suivez toujours ?</li>
+						</ol>
+					<li>Ceci est le deuxième sous élément du deuxième élément numéroté</li>
+					<li>Ceci est le troisième sous élément du deuxième élément numéroté</li>
+				</ul>
+			<li>Ceci est le troisième élément numéroté qui contient deux définition<br>facile</li>
+				<span class="marge"> qui n'est pas difficile</span><br>
+				difficile <br>
+				<span class="marge"> synonyme de compliqué</span><br>
+		</ol>
+		 <h1 class="consigne">Exo 5: </h1>
+		 
+		 <form  enctype="multipart/form-data" method="POST">
+			<fieldset>
+			<legend>Authentification</legend>
+				Login : <input type="texte" name="login" placeholder="saisr votre login">
+				Mot de passe : <input type="password" name="password" placeholder="saisir votre mot de passe" maxlength="8">
+				<br><input type="submit" name="envoi" >
+				<input type="reset" value="Effacer">
+			</fieldset>
+		</form>
+	 <!-- Faire des label voir consigne -->
+		<h1 class="consigne">Exo :6 </h1>
+		<form  enctype="multipart/form-data" method="POST">
+			<fieldset class="valid">
+			<legend>Email avec needemand.com</legend>
+				<input type="email" class="valid" name="email" placeholder="saisir votre email" pattern="[a-zA-Z0-9._-]+@[needemand.com]+.[a-zA-Z.]{11}$" required><br>
+				<input type="password" class="valid" maxlength="8" pattern="^[? =.*\d].[a-zA-Z]{6,8}$"required><br>
+				<input type="submit">
+			</fieldset>
+		</form>
+		
+		<h1 class="consigne">Exo :7 </h1>
+		<form  enctype="multipart/form-data" method="POST">
+			<fieldset>
+			<legend> Formulaire d'inscription</legend>
+			<nav>
+			<p>Nom</p>
+			<p>Prénom</P>
+			<p>Email</p>
+			<p>Sexe</p>
+			<p>Photo</p>
+			<p>Pays</p>
+			<br>
+			<p>Les langages préférés</p>
+			<br>
+			<p>Domaines d'activités</p>
+			</nav>
+			<nav class="form" >
+			<input  class="form2" type="text" name="famillyname" placeholder="Saisir votre nom" >
+			<br><br>
+			<input class="form2" type="text" name="famillyname" placeholder="Saisir votre prénom" >
+			<br><br>
+			<input class="form2" type="email" class="valid" name="email" placeholder="saisir votre Email">
+			<br><br>
+			<label>Masculin<input type="radio" name="Sex" value="m"></label> <label>feminin<input type="radio" name="Sex" value="f"></label>
+			<br><br>
+			<input class="form2" type="file" value="Parcourir">
+			<br><br>
+			<select class="form2" name="country">
+					<option value="fr">France</option>
+					<option value="uk">Angleterre</option>
+					<option value="de">Allemagne</option>
+					<option value="it">Italie</option>
+					<option value="ch">Suisse</option>
+					<option value="es">Espagne</option>
+				</select>
+			<br><br>
+			<select class="form2" name="Langage" multiple>
+					<option value="Français">Java</option>
+					<option value="Italian">C</option>
+					<option value="german">C++</option>
+					<option value="flemish">PHP</option>
+					<option value="spanish">Python</option>
+				</select>
+				(Pour faire plusisuers choix maintenir la touche CTRL enfoncée)
+			<br><br>
+			<input class="form3" type="checkbox" name="Developpement" value="dev">Développement
+			<input class="form3" type="checkbox" name="project management" value="management">Gestion Projet
+			<input class="form3" type="checkbox" name="database" value="data">Base de données
+			</nav>
+			<br>
+			<input type="submit">
+			<input type="reset" value="Annuler">
+			</fieldset>
+		</form>
+		
+</body>
+</html>

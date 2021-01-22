@@ -1,0 +1,27 @@
+<html lang="fr">
+    <head>
+         <title>table_multip</title>
+         <meta charset="UTF-8">
+         <!-- <link rel="stylesheet" href="css/styles.css"> -->
+         <script type="text/javascript">
+
+			
+			var items = new Array();
+			function myFunction() {
+			  var nom = prompt("Rentrer un nom");
+			  <!-- var regaex = /^[a-zA-A]+$/; -->
+			   items.push(nom);
+			   return items;
+			}
+			
+			function randomize() {
+				alert(items[Math.floor(Math.random()*items.length)]);
+				console.log(items)
+			}
+         </script>
+    </head>
+	<body>
+		<button onclick="myFunction()">Click me</button>
+		<button onclick="randomize()">Tirage_au_sort</button>
+	 </body>
+</html>

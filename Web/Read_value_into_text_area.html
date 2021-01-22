@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<title>Lire une valeur dans un champs de texte</title>
+<meta charset="utf-8">
+<style>
+#bouton {margin-top: 12px;}
+</style>
+<script>
+function controle(){
+var saisie =document.getElementById("input").value;
+alert("Vous avez saisi : "+ saisie);
+}
+</script>
+<body> 
+
+<h2>Lire une valeur dans un champs de texte</h2>
+<form>
+<input type="text" id="input" name="input" value=""><br>
+<input type="button" id="bouton" value="Contrôler" onclick="controle()">
+</form>
+</body>

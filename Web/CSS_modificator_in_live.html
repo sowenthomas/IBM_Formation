@@ -1,0 +1,142 @@
+<html>
+	<head>
+		<style>
+			#tableau3
+			{
+				border-collapse: collapse;
+				width: 50%;
+				border: 1px solid black;
+			}
+
+			#bordure
+			{
+				border: 1px solid black;
+				text-align: start;
+				border-collapse:collapse ;
+			}
+
+			.square
+			{
+				margin: auto;
+				border: 1px solid black;
+				width: 60px;
+				height: 60px;
+				text-align:center;
+			}
+
+			.text
+			{
+				margin-top: 12px;
+		</style>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<script>
+			function bckgnd(){
+				var x = document.getElementById("background").value;
+				document.querySelector(".square").style.background = "#"+String(x);
+			}
+			function padd(){
+				var y = document.getElementById("padd").value;
+				document.querySelector(".square").style.padding = String(y)+"px";
+			}
+			function hei(){
+				var z = document.getElementById("hei").value;
+				document.querySelector(".square").style.height = String(z)+"px";
+			}
+			function widt(){
+				var a = document.getElementById("wi").value;
+				document.querySelector(".square").style.width = String(a)+"px";
+			}
+			function arrond(){
+				var b = document.getElementById("arrond").value;
+				document.querySelector(".square").style.borderRadius = String(b)+"px";
+			}
+			function rotat(){
+				var c = document.getElementById("rotat").value;
+				document.querySelector(".square").style.transform = "rotate("+ String(c)+"deg)";
+			}
+		</script>
+	</head>
+	<body>
+		<table id="tableau3">
+			<tr>
+				<td id="bordure">
+					Couleur de fond (rgb)
+				</td>
+				<td  id="bordure">
+					<div>
+						0
+						<input type="range" id="background" name="volume"min="0" max="255" step="15" onchange="bckgnd()">
+						255
+					</div>
+				</td>
+				<td rowspan="6">
+					<div class="square">
+						<div class="text">
+							Titre de test
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td  id="bordure">
+					Padding
+				</td>
+				<td  id="bordure">
+					<div>
+						0
+						<input type="range" id="padd" name="volume"min="0" max="30" step="5" onchange="padd()">
+						30
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td id="bordure">
+					Height
+				</td>
+				<td id="bordure">
+					<div>
+						0
+						<input type="range" id="hei" name="volume"min="0" max="200" step="20" onchange="hei()">
+						200
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td id="bordure">
+					Width
+				</td>
+				<td  id="bordure">
+					<div>
+						0
+						<input type="range" id="wi" name="volume"min="0" max="200" step="20" onchange="widt()">
+						200
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td id="bordure">
+					Arrondis
+				</td>
+				<td id="bordure">
+					<div>
+						0
+						<input type="range" id="arrond" name="volume"min="0" max="30" step="5"  onchange="arrond()">
+						30
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td id="bordure">
+					Rotation
+				</td>
+				<td id="bordure">
+					<div>
+						  0
+						<input type="range" id="rotat" name="volume"min="0" max="180" step="15" onchange="rotat()">
+						180
+					</div>
+				</td>
+			</tr>
+		</table>
+		<div></body>
+	</html>

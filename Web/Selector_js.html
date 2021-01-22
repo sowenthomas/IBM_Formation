@@ -1,0 +1,60 @@
+ <!DOCTYPE html> 
+<html lang="fr"> 
+<head> 
+<title>Les API Javascript</title> 
+<meta charset=utf-8> 
+<style type="text/css"> 
+table { width: 270px; 
+        border-collapse: collapse; 
+        border: 1px solid black; 
+        margin-top: 15px;} 
+td { text-align: center; 
+     border: 1px solid black;} 
+#resultat { font-weight:bold;} 
+div { margin-top: 12px;} 
+button { margin-top: 12px;} 
+</style> 
+<script type="text/javascript"> 
+function init() { 
+document.querySelector("#findChecked").onclick = function() { 
+var selected = document.querySelectorAll("*:checked"); 
+var result = "Les cases sélectionnées sont :<br> "; 
+for (var i = 0; i < selected.length; i++) { 
+result += (selected[i].name + " "); 
+} 
+document.querySelector("#resultat").innerHTML = result; 
+} 
+} 
+</script> 
+</head> 
+<body onload="init()"> 
+<section> 
+<table> 
+<tr> 
+<td><input type="checkbox" name="A1">A1</td> 
+<td><input type="checkbox" name="A2">A2</td> 
+<td><input type="checkbox" name="A3">A3</td> 
+</tr> 
+<tr> 
+<td><input type="checkbox" name="B1">B1</td> 
+<td><input type="checkbox" checked="" name="B2">B2</td> 
+<td><input type="checkbox" name="B3">B3</td> 
+</tr> 
+<tr> 
+<td><input type="checkbox" name="C1">C1</td> 
+<td><input type="checkbox" name="C2">C2</td> 
+<td><input type="checkbox" name="C3">C3</td> 
+</tr> 
+<tr> 
+<td><input type="checkbox" name="D1">D1</td> 
+<td><input type="checkbox" name="D2">D2</td> 
+<td><input type="checkbox" name="D3">D3</td> 
+</tr> 
+</table> 
+<div>Sélectionnez quelques cases à cocher.</div> 
+<button type="button" id="findChecked" autofocus="">Trouver </ 
+button> 
+<div id="resultat"></div> 
+</section> 
+</body> 
+</html>

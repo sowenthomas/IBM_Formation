@@ -1,0 +1,30 @@
+<!DOCTYPE html><html lang="fr">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Horloge</title>
+<script>
+function Horloge() {maintenant=new Date();
+heures=maintenant.getHours();
+minutes=maintenant.getMinutes();
+secondes=maintenant.getSeconds();
+if(heures<10) {
+heures="0"+heures;
+}
+if(minutes<10) {
+minutes="0"+minutes;
+}
+if(secondes<10) {
+secondes="0"+secondes;
+}
+document.form1.Pendule.value=heures+":"+minutes+":"+secondes;
+setTimeout("Horloge()", 1000);
+}
+</script>
+</head>
+<body onLoad="Horloge()">
+<form name="form1" method="post" action="">
+Il est exactement :
+<input name="Pendule" type="text" id="Pendule" size="12">
+</form>
+</body>
+</html>

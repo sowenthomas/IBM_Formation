@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Html</title>
+    <meta charset="utf-8">
+    <script language="javascript">
+		<!-- nom=prompt("Quel est votre nom ?", "Saisir votre nom ici"); -->
+		<!-- prenom=prompt("Quel est votre prenom ?", "Saisir votre prenom ici"); -->
+		<!-- alert("Votre nom complet est : \r"+nom+"\r "+prenom); -->
+		var regexonlynumber = /^[0-9]+$/;
+		
+		poids=prompt("Quel est votre poids ?", "Saisir votre poids ici");				
+		nbVerre=prompt("Quel est votre nbVerre ?", "Saisir votre nbVerre ici");
+		
+		if (regexonlynumber.test(nbVerre)& regexonlynumber.test(poids))
+		{
+		tauxalco=(nbVerre*10)/poids*0.7;
+		alert("Votre taux d'alcoolémie complet est : \r"+tauxalco);
+		}
+		else {
+			alert("Veuillez saisir que des nombres pour les nombres de verre et le poids svp");
+		}
+		
+	</script>
+</head>
+<body>
+
+</body>
+</html>

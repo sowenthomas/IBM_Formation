@@ -1,0 +1,515 @@
+<!DOCTYPEhr html>
+ <html>
+	<head>
+	<title>Exo HTML</title>
+	<meta charset="UTF-8" />
+	<script>
+	<script>
+	function bckgnd(){
+			var x = document.getElementsByClassName("div");
+			x[0].style.background = "rgb(135,206,235)";
+			x[0].style.border = "dotted rgb(0,0,128)";
+			x[0].style.color = "rgb(245,245,245)";
+			}
+			
+	</script>
+	</script>
+		<style>
+		td, th {
+		border: 1px solid black;
+		}
+		
+		.table1 {
+		border: 1px solid black;
+		width: 80%;
+		text-align: center;
+		margin-left: 5%;
+		margin-right: 5%;
+		}
+		
+		.table2{
+		border: 1px solid black;
+		text-align: right;
+		margin-left: 10%;
+		}
+		
+		.table3{
+		border: 1px solid black;
+		text-align: right;
+		margin-left: 10%;
+		border-collapse: collapse;
+		}
+		.table4{
+		border: 1px solid black;
+		text-align: center;
+		margin-left: 10%;
+		border-collapse: collapse;
+		}
+		
+		.table5{
+		border: 1px solid black;
+		text-align: left;
+		margin-left: 10%;
+		border-collapse: collapse;
+		}
+		
+		tfoot{
+		color:blue;
+		}
+		
+		.titreancre{
+		margin-left:12%;
+		}
+		.consigne{
+		color: blue;
+		}
+		
+		</style>
+	</head>
+	<body>
+		<h2 class="consigne">1- Répondez aux questions suivantes :</h2>
+		<pre>
+		1.<i> A quoi sert la déclaration DOCTYPE ? </i>
+			La déclaration du DOCTYPE permet d'indiquer à quelle règle d'écriture obéit le code d'une page html.
+			
+		2. Comment on peut valider un document html ?
+			<i>On peut valider un document html avec w3c validator accessible via validator.w3.org .</i>
+			
+		3. <i>Quel emplacement est défini le jeu de caractères utilisé dans le document ?</i>
+			La balise meta avec l'attribut charset permet de définir le jeu de caratère utilisé dans le document.
+			
+		4. <i>Quel est le rôle des balises sémantique?</i>
+			Le rôle des balises sémantique c'est structurer la page html afin de donner un sens aux informations qu'elles encadrent.
+			Ces dernières permettent à améliorer le référencement sur les moteurs de recherche et de de permettent aussi aux personnes atteintes de déficience visuelle qui utilise un synthétiseur vocal, de lire les pages web.
+
+		</pre>
+		
+		<h2 class="consigne">2- Réaliser une page html composée des éléments suivants :</h2>
+		
+		<h1 title="Extensible Markup Language">XML Schema</h1>
+		
+		<h2>Titre de niveau 2</h2>
+		<p>
+		Je suis un paraprahe depuis la nuit des temps, j'ai commencé en 1948 suite à mon graphe de mon parapluie<br>
+		Je suis structuré de plusieurs mot permettant de me quantifier au yeux de tous, il se peut que je contienne exactement 97 mots et 452 lettres au total<br>
+		il se peut aussi que je fasse un burnout car il burn en Aout.
+		</p>
+		<h2>Exemple</h2>
+		<pre>
+			&lt?xml version="1.0" encoding="UTF-8"?&gt
+			&ltxs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" /&gt
+			&ltxs:element name="personne"&gt
+				&ltxs:complexType&gt
+					&ltxs:sequence&gt
+						&ltxs:element name="nom" type="xs:string" /&gt
+						&ltxs:element name="prenom" type="xs:string" /&gt
+						&ltxs:element name="date_naissance" type="" /&gt
+						&ltxs:element name="etablissement" type="xs:string" /&gt
+						&ltxs:element name="num_tel" type="xs:string" /&gt
+					&lt/xs:sequence&gt
+				&lt/xs:complexType&gt
+			&lt/xs:element&gt
+			&lt/xs:schema&gt
+		</pre>
+		
+		</pre>
+			<hr>
+		<u>citation
+		</u>
+		: «Les données sont une chose précieuse et dureront plus longtemps que les systèmes eux-mêmes. » 
+		<i>(Time berner lee)</i>
+		
+		<h2 class="consigne">3- Réalisez les listes :</h2>	
+			<ul>Listes à puces
+				<li>HTML</li>
+				<li>javascript</li>
+				<li>réseaux</li>
+				<li>programation</li>
+				<li>serveur</li>
+			</ul>
+			
+			<ul type="square">
+				<li>mathieu</li>
+				<li>fred</li>
+				<li>sylvie</li>
+				<li>grégoire</li>
+			</ul>
+			
+			<ol>Liste ordonné
+				<li>éplucher</li>
+				<li>couper</li>
+				<li>cuire</li>
+				<li>manger</li>
+			</ol>
+		<h2 class="consigne">4- Créer des listes numérotés et des listes à puce en utilisant les balises html :</h2>
+			<ol>I. HTML
+				<li>Historique</li>
+				<li>Structure</li>
+				<li>Validation</li>
+				<li>Nouveauté HTML5</li>
+			</ol>
+			<ul type="circle">II. CSS
+				<li>Introduction</li>
+				<li>Les proriétés</li>
+				<li>Nouveauté CSS3</li>
+			</ul>
+		
+		<h2 class="consigne">5 – Réalisez des tableaux identiques :</h2>
+			<table class="table1">
+			<tr>
+				<td colspan="4">
+					1
+				</td>
+			</tr>
+			<tr>
+				<td rowspan="4">
+					2
+				</td>
+				<td>
+					3
+				</td>
+				<td>
+					4
+				</td>
+				<td rowspan="4">
+					5
+				</td>
+			</tr>
+			<tr>
+				<td>
+					6
+				</td>
+				<td>
+					7
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					8
+				</td>
+			</tr>
+			</table>
+			<br>
+			
+			<table class="table2">
+				<tr>
+				<td>A</td>
+				<td>B</td>
+				<td>C</td>
+				<td>D</td>
+				</tr>
+				<tr>
+				<td>1</td>
+				<td>deux</td>
+				<td>3</td>
+				<td>quatre</td>
+				</tr>
+				<tr>
+				<td>cinq</td>
+				<td>6</td>
+				<td>Sept</td>
+				<td>8</td>
+				</tr>
+				<tr>
+				<td>9</td>
+				<td>dix</td>
+				<td>11</td>
+				<td>douze</td>
+				</tr>
+			</table>
+			<br>
+			
+			
+			<table class="table3">
+				<tr>
+					<td></td>
+					<td colspan="4">Matin</td>
+					<td colspan="4">Après midi </td>
+				</tr>
+				<tr>
+					<td>Jours/<br>heures</td>
+					<td >08-09</td>
+					<td>09-10</td>
+					<td>10-11</td>
+					<td>11-12</td>
+					<td>14-15</td>
+					<td>15-16</td>
+					<td>16-17</td>
+					<td>17-18</td>
+				</tr>
+				
+				<tr>
+					<td>Lundi</td>
+					<td colspan="4">Analyse de données</td>
+					<td colspan="2">Théorie des graphes</td>
+					<td>***</td>
+					<td>***</td>
+				</tr>
+				
+				<tr>
+					<td>Mardi</td>
+					<td>***</td>
+					<td>***</td>
+					<td colspan="2">Théorie des graphes</td>
+					<td colspan="2">TP informatique</td>
+					<td>***</td>
+					<td>***</td>
+				</tr>
+				
+				<tr>
+					<td>Mercredi</td>
+					<td colspan="2">Programmation <br> Web</td>
+					<td>***</td>
+					<td>***</td>
+					<td colspan="2">TP<br> Programmation<br> Web </td>			
+					<td colspan="2">TD Théories<br> des graphes </td>					
+				</tr>
+				
+				<tr>
+					<td>Jeudi</td>
+					<td>***</td>
+					<td>***</td>
+					<td colspan="2">TP<br> Programmation<br> Web </td>
+					<td colspan="4">TD des séries</td>
+				</tr>
+				
+				<tr>
+					<td>Vendredi</td>
+					<td colspan="2">Structure des <br> données</td>
+					<td colspan="2">TD d'analyse des <br>données</td>
+					<td>***</td>
+					<td>***</td>
+					<td>***</td>
+					<td>***</td>
+				</tr>
+				
+				<tr>
+					<td>Samedi</td>
+					<td colspan="2">Cours LC</td>
+					<td colspan="2">TD de LC</td>
+					<td>***</td>
+					<td>***</td>
+					<td>***</td>
+					<td>***</td>
+				</tr>
+			</table>
+				
+			<br><br>
+				
+			<table class="table4">
+					<thead>
+						<tr>
+							<th rowspan="2">Equipes</th>
+							<th colspan="6" class="text_align">Janvier</th>
+							<td colspan="2" rowspan="2"></td>
+						</tr>
+						<tr>
+						<th>Lundi</th>
+						<th>Mardi</th>
+						<th colspan="2">Mercredi</th>
+						<th>Jeudi</th>
+						<th>Vendredi</th>
+						</tr>
+						
+					</thead>
+					<tbody>
+						<tr>
+							<td>Equipe1</td>
+							<td colspan="4">Tach1</td>
+							<td colspan="2">Tache2</td>
+							<td colspan="2" rowspan="2">Semaine<br>1</td>						
+						</tr>
+						<tr>
+							<td>Equipe2</td>
+							<td colspan="3">Tache1</td>
+							<td colspan="3">Tache2</td>
+						</tr>
+						<tr>
+							<td>Equipe1</td>
+							<td>Tach3</td>
+							<td colspan="4">Tache4</td>
+							<td>Tache5</td>
+							<td colspan="2" rowspan="2">Semaine<br>2</td>
+						</tr>
+						<tr>
+							<td>Equipe2</td>
+							<td colspan="2">Tache3</td>
+							<td colspan="4">Tache4</td>				
+						</tr>
+						<tr>
+							<td>Equipe1</td>
+							<td colspan="3">Tache5</td>
+							<td colspan="3">Tache6</td>
+							<td colspan="2" rowspan="2">Semaine<br>3</td>						
+						</tr>
+						<tr>
+							<td>Equipe2</td>
+							<td colspan="1">Tache5</td>
+							<td colspan="5">Tache6</td>				
+						</tr>
+						<tr>
+							<td>Equipe1</td>
+							<td colspan="4">Tache7</td>
+							<td colspan="2">Tache8</td>
+							<td colspan="2" rowspan="2">Semaine<br>4</td>						
+						</tr>
+						<tr>
+							<td>Equipe2</td>
+							<td colspan="3">Tache7</td>
+							<td colspan="3">Tache8</td>
+						</tr>
+						
+
+					</tbody>
+			</table>
+				
+				<br><br><br>
+			
+			<h2 class="consigne">6 - Utiliser les balises caption, thead tbody et tfoot pour mieux structurer un tableau html :</h2>
+				<table class="table5">
+					<caption>Calcul de la moyenne</caption>
+						<thead>
+							<tr>
+								<th>Matières</th>
+								<th>Note par matière</th>
+								<th>Coefficient</th>
+								<th>Note*Coefficient</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Mathématique</td>
+								<td>17</td>
+								<td>4</td>
+								<td>68</td>
+							</tr>
+							<tr>
+								<td>Pysique</td>
+								<td>15</td>
+								<td>3</td>
+								<td>45</td>
+							</tr>
+							<tr>
+								<td>Informatique</td>
+								<td>16</td>
+								<td>2</td>
+								<td>32</td>
+							</tr>
+							<tr>
+								<td colspan="2">Totals</td>
+								<td>9</td>
+								<td>145</td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<tr>
+								<td colspan="3">Moyenne</td>
+								<td>16.12</td>
+							</tr>
+						</tfoot>
+				</table>
+			
+			<br><br><br>
+			
+			<h2 class="consigne">7 - Insérer des ancres  pour améliorer l'accessibilité dans un document html :</h2>
+			<nav>
+				<a href="#Titre1">Définition</a><br>
+				<a href="#Titre2">Historique</a><br>
+				<a href="#Titre3">Les avantages</a><br>
+				<a href="#Titre4">Les inconvénients</a><br>
+			</nav>
+				<h1 id="Titre1">Définition</h1>
+			<pre>
+	Integer mattis porta mi pretium vulputate. Fusce maximus lacinia euismod.
+	Fusce viverra sit amet nunc ac rutrum. Nullam eu metus at justo porttitor interdum vel sed turpis.
+	Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+	Fusce id odio ultricies arcu semper lobortis. Morbi commodo, ante ut commodo vehicula, justo neque convallis massa, id pretium nulla enim vel urna.
+	Sed faucibus volutpat felis, condimentum aliquam velit molestie in. Nunc id nisl sit amet nisi sollicitudin mollis. Vestibulum et convallis nunc.
+	Pellentesque placerat posuere metus et venenatis. Nullam ac ipsum auctor, pharetra ipsum dignissim, volutpat urna.
+	Donec pellentesque, enim eu mollis mattis, urna ligula imperdiet est, quis cursus nisl neque non odio.
+	Praesent turpis est, mollis in lorem et, aliquet accumsan ante. Vestibulum vitae tempor leo.
+	Integer mattis porta mi pretium vulputate. Fusce maximus lacinia euismod.
+	Fusce viverra sit amet nunc ac rutrum. Nullam eu metus at justo porttitor interdum vel sed turpis.
+	Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+	Fusce id odio ultricies arcu semper lobortis. Morbi commodo, ante ut commodo vehicula, justo neque convallis massa, id pretium nulla enim vel urna.
+	Sed faucibus volutpat felis, condimentum aliquam velit molestie in. Nunc id nisl sit amet nisi sollicitudin mollis. Vestibulum et convallis nunc.
+	Pellentesque placerat posuere metus et venenatis. Nullam ac ipsum auctor, pharetra ipsum dignissim, volutpat urna.
+	Donec pellentesque, enim eu mollis mattis, urna ligula imperdiet est, quis cursus nisl neque non odio.
+	Praesent turpis est, mollis in lorem et, aliquet accumsan ante. Vestibulum vitae tempor leo.
+			</pre>
+			
+			<h1 id="Titre2">Historique</h1>
+			<pre>
+	Integer mattis porta mi pretium vulputate. Fusce maximus lacinia euismod.
+	Fusce viverra sit amet nunc ac rutrum. Nullam eu metus at justo porttitor interdum vel sed turpis.
+	Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+	Fusce id odio ultricies arcu semper lobortis. Morbi commodo, ante ut commodo vehicula, justo neque convallis massa, id pretium nulla enim vel urna.
+	Sed faucibus volutpat felis, condimentum aliquam velit molestie in. Nunc id nisl sit amet nisi sollicitudin mollis. Vestibulum et convallis nunc.
+	Pellentesque placerat posuere metus et venenatis. Nullam ac ipsum auctor, pharetra ipsum dignissim, volutpat urna.
+	Donec pellentesque, enim eu mollis mattis, urna ligula imperdiet est, quis cursus nisl neque non odio.
+	Praesent turpis est, mollis in lorem et, aliquet accumsan ante. Vestibulum vitae tempor leo.
+	Integer mattis porta mi pretium vulputate. Fusce maximus lacinia euismod.
+	Fusce viverra sit amet nunc ac rutrum. Nullam eu metus at justo porttitor interdum vel sed turpis.
+	Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+	Fusce id odio ultricies arcu semper lobortis. Morbi commodo, ante ut commodo vehicula, justo neque convallis massa, id pretium nulla enim vel urna.
+	Sed faucibus volutpat felis, condimentum aliquam velit molestie in. Nunc id nisl sit amet nisi sollicitudin mollis. Vestibulum et convallis nunc.
+	Pellentesque placerat posuere metus et venenatis. Nullam ac ipsum auctor, pharetra ipsum dignissim, volutpat urna.
+	Donec pellentesque, enim eu mollis mattis, urna ligula imperdiet est, quis cursus nisl neque non odio.
+	Praesent turpis est, mollis in lorem et, aliquet accumsan ante. Vestibulum vitae tempor leo.
+			</pre>
+			<h1 id="Titre3">Les avantages</h1>
+			<pre>
+	Integer mattis porta mi pretium vulputate. Fusce maximus lacinia euismod.
+	Fusce viverra sit amet nunc ac rutrum. Nullam eu metus at justo porttitor interdum vel sed turpis.
+	Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+	Fusce id odio ultricies arcu semper lobortis. Morbi commodo, ante ut commodo vehicula, justo neque convallis massa, id pretium nulla enim vel urna.
+	Sed faucibus volutpat felis, condimentum aliquam velit molestie in. Nunc id nisl sit amet nisi sollicitudin mollis. Vestibulum et convallis nunc.
+	Pellentesque placerat posuere metus et venenatis. Nullam ac ipsum auctor, pharetra ipsum dignissim, volutpat urna.
+	Donec pellentesque, enim eu mollis mattis, urna ligula imperdiet est, quis cursus nisl neque non odio.
+	Praesent turpis est, mollis in lorem et, aliquet accumsan ante. Vestibulum vitae tempor leo.
+	Integer mattis porta mi pretium vulputate. Fusce maximus lacinia euismod.
+	Fusce viverra sit amet nunc ac rutrum. Nullam eu metus at justo porttitor interdum vel sed turpis.
+	Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+	Fusce id odio ultricies arcu semper lobortis. Morbi commodo, ante ut commodo vehicula, justo neque convallis massa, id pretium nulla enim vel urna.
+	Sed faucibus volutpat felis, condimentum aliquam velit molestie in. Nunc id nisl sit amet nisi sollicitudin mollis. Vestibulum et convallis nunc.
+	Pellentesque placerat posuere metus et venenatis. Nullam ac ipsum auctor, pharetra ipsum dignissim, volutpat urna.
+	Donec pellentesque, enim eu mollis mattis, urna ligula imperdiet est, quis cursus nisl neque non odio.
+	Praesent turpis est, mollis in lorem et, aliquet accumsan ante. Vestibulum vitae tempor leo.
+			</pre>
+			<h1 id="Titre4">Les inconvénients</h1>
+			<pre>
+	Integer mattis porta mi pretium vulputate. Fusce maximus lacinia euismod.
+	Fusce viverra sit amet nunc ac rutrum. Nullam eu metus at justo porttitor interdum vel sed turpis.
+	Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+	Fusce id odio ultricies arcu semper lobortis. Morbi commodo, ante ut commodo vehicula, justo neque convallis massa, id pretium nulla enim vel urna.
+	Sed faucibus volutpat felis, condimentum aliquam velit molestie in. Nunc id nisl sit amet nisi sollicitudin mollis. Vestibulum et convallis nunc.
+	Pellentesque placerat posuere metus et venenatis. Nullam ac ipsum auctor, pharetra ipsum dignissim, volutpat urna.
+	Donec pellentesque, enim eu mollis mattis, urna ligula imperdiet est, quis cursus nisl neque non odio.
+	Praesent turpis est, mollis in lorem et, aliquet accumsan ante. Vestibulum vitae tempor leo.
+	Integer mattis porta mi pretium vulputate. Fusce maximus lacinia euismod.
+	Fusce viverra sit amet nunc ac rutrum. Nullam eu metus at justo porttitor interdum vel sed turpis.
+	Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+	Fusce id odio ultricies arcu semper lobortis. Morbi commodo, ante ut commodo vehicula, justo neque convallis massa, id pretium nulla enim vel urna.
+	Sed faucibus volutpat felis, condimentum aliquam velit molestie in. Nunc id nisl sit amet nisi sollicitudin mollis. Vestibulum et convallis nunc.
+	Pellentesque placerat posuere metus et venenatis. Nullam ac ipsum auctor, pharetra ipsum dignissim, volutpat urna.
+	Donec pellentesque, enim eu mollis mattis, urna ligula imperdiet est, quis cursus nisl neque non odio.
+	Praesent turpis est, mollis in lorem et, aliquet accumsan ante. Vestibulum vitae tempor leo.
+			</pre>
+			
+		<h2 class="consigne">8 - Manipuler les liens relatifs :</h2>
+			<a href="racine/Index.html">Accès au sommaire</a><br>
+			
+		<h2 class="consigne">9 - Créer des listes de définition basés sur les trois éléments :</h2>
+			<h2>Quelques définitions</h2>
+				<dl>
+					<dd>L'Hypertext Markup Language, généralement abrégé HTML, est le format de données conçu <br> pour représenter les pages web</dd>
+						<dt>CSS</dt>
+					<dd>Les feuilles de style en cascade, généralement appelées CSS de l'anglais Cascading Style <br> Sheets, forment un langage informatique qui décrit la présentation des documents HTML et </br> XML.</dd>
+						<dt>PHP</dt>
+					<dd>PHP: Hypertext Preprocessor, plus connu sous son sigle PHP (acronyme récursif), est un <br> langage de programmation" libre, principalement utilisé pour produire des pages Web <br> dynamiques via un serveur HTTP</dd>
+
+				</dl>
+		<h2 class="consigne">10 - Réaliser la page en utilisant les balises de structure html5 (header , nav , section, article footer…) :</h2>
+			<a href="Exo10/Exo10.html">Exo n°10</a><br>
+	</body>		
+</html>
